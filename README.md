@@ -1,2 +1,2 @@
 # FrontEndExercise
-Front end exercise's by stlund - 2025.
+Front-end exercise's by stlund - 2025.
