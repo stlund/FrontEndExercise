@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Övningar på Form's">
+    <title>Form Övning</title>
+</head>
+
+<body>
+    <h1>Create a free account</h1>
+    <form action="action_post.php" method="post">
+        <!-- ACCOUNT DETAILS -->
+        <fieldset>
+            <legend>
+                <h3><strong>Account details</strong></h3>
+            </legend>
+
+            <label for="email">Email*</label><br>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Password*</label><br>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="repEmail">Repeat email*</label><br>
+            <input type="email" name="repEmail" id="repEmail">
+            <br>
+            <label for="repPassword">Repeat password*</label><br>
+            <input type="password" name="repPassword" id="repPassword">
+
+        </fieldset>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>
+                <h3><strong>Personal Details</strong></h3>
+            </legend>
+
+            <label for="fullName">Name*</label><br>
+            <input type="text" name="fullName" id="fullName">
+            <br>
+            <label for="phone">Phone*</label><br>
+            <input type="tel" name="phone" id="phone">
+            <br>
+            <label for="street">Street*</label><br>
+            <input type="text" name="street" id="street">
+            <br>
+            <label for="city">City*</label><br>
+            <input type="text" name="city" id="city">
+            <br>
+            <label for="country">Country*</label>
+            <select name="country" id="country">
+                <option value=""></option>
+                <option value="sverige">Sverige</option>
+                <option value="finland">Finland</option>
+            </select>
+            <br>
+            <label for="website">Website*</label><br>
+            <input type="url" name="website" id="website">
+            <br>
+            <label for="gender">Gender*</label><br>
+            <input type="radio" name="gender" id="male"> Male
+            <input type="radio" name="gender" id="female"> Female
+            <br>
+            <label for="nationality">Nationality*</label>
+            <select name="nationality" id="nationality">
+                <option value=""></option>
+                <option value="sverige">Sverige</option>
+                <option value="finland">Finland</option>
+            </select>
+            <br>
+
+            <label for="children">Children</label><br>
+            <input type="checkbox" name="children" id="children" value="children">
+        </fieldset>
+
+        <!-- Terms and Mailing -->
+        <fieldset>
+            <legend>
+                <h3><strong>Terms and Mailing</strong></h3>
+            </legend>
+
+            <input type="checkbox" name="option1" id="option1" value="option1">
+            <label for="option1">I accept the <a href="http://" target="_blank" rel="noopener noreferrer">Privacy
+                    Policy</a></label>
+            <br>
+            <input type="checkbox" name="option2" id="option2" value="option2">
+            <label for="option2">I want ro recive personalizied offers by your site</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
