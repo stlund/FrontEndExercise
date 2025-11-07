@@ -1,0 +1,21 @@
+body {
+    background-color: #c0c0c0;
+    font-family: Arial;
+    font-size: 12px;
+}
+h1 {
+    font-family: Arial;
+    color: #64645a;
+    margin: 0;
+    padding: 0.5em;
+
+}
+.main-div {
+    background-color: #e0e0e0;
+}
+.body-div {
+    margin: 0.5em 0em;
+    color: white;
+    padding: 1em 0.2em;
+
+}
