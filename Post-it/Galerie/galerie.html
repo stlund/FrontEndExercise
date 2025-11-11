@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galleri med foton">
+    <title>Galleri</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+
+        img#logo {
+            padding: 0.5px;
+            border: 5px dotted #675e57;
+            width: 728px;
+            height: 90px;
+            max-width: 728;
+            max-height: 90px;
+        }
+
+        nav#main-nav {
+            background-color: gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ul#nav-ul {
+            list-style-type: none;
+            justify-content: center;
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            margin: 0px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .galleri {
+            background-color: lightslategray;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #li-img {
+            display: inline;
+        }
+
+        footer {
+            background-color: gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #footerp {
+            padding: 10px;
+        }
+
+        .card {
+            background: beige;
+            border: 6px solid rgba(0, 0, 0, 0.03);
+            border-radius: 0px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="main-nav">
+            <ul id="nav-ul">
+                <li><a href="#home">home</a></li>
+                <li><a href="#galerie">galerie</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-view">
+        <figure id="logo-container">
+            <img id="logo" src="https://picsum.photos/728/90?random=1" alt="a placeholder img.">
+            <figcaption>
+                <h1>Here you can view all the images Placeholder.com provides</h1>
+            </figcaption>
+        </figure>
+        <section class="galleri">
+
+
+            <figure class="card">
+                <a href="storre1.jpg" aria-label="Öppna bild 1 i större vy">
+                    <span class="thumb"><img src="https://picsum.photos/220/198?random=2"
+                            alt="Beskrivande alt-text för bild 1" loading="lazy"></span>
+                </a>
+                <figcaption>Image 1</figcaption>
+            </figure>
+            <figure class="card">
+                <a href="storre1.jpg" aria-label="Öppna bild 1 i större vy">
+                    <span class="thumb"><img src="https://picsum.photos/220/198?random=2"
+                            alt="Beskrivande alt-text för bild 1" loading="lazy"></span>
+                </a>
+                <figcaption>Image 2</figcaption>
+            </figure>
+            <figure class="card">
+                <a href="storre1.jpg" aria-label="Öppna bild 1 i större vy">
+                    <span class="thumb"><img src="https://picsum.photos/220/198?random=2"
+                            alt="Beskrivande alt-text för bild 1" loading="lazy"></span>
+                </a>
+                <figcaption>Image 3</figcaption>
+            </figure>
+            <figure class="card">
+                <a href="storre1.jpg" aria-label="Öppna bild 1 i större vy">
+                    <span class="thumb"><img src="https://picsum.photos/220/198?random=2"
+                            alt="Beskrivande alt-text för bild 1" loading="lazy"></span>
+                </a>
+                <figcaption>Image 4</figcaption>
+            </figure>
+            <figure class="card">
+                <a href="storre1.jpg" aria-label="Öppna bild 1 i större vy">
+                    <span class="thumb"><img src="https://picsum.photos/220/198?random=2"
+                            alt="Beskrivande alt-text för bild 1" loading="lazy"></span>
+                </a>
+                <figcaption>Image 5</figcaption>
+            </figure>
+            <figure class="card">
+                <a href="storre1.jpg" aria-label="Öppna bild 1 i större vy">
+                    <span class="thumb"><img src="https://picsum.photos/220/198?random=2"
+                            alt="Beskrivande alt-text för bild 1" loading="lazy"></span>
+                </a>
+                <figcaption>Image 6</figcaption>
+            </figure>
+
+        </section>
+
+    </main>
+    <footer>
+        <p id="footerp">C 2025 My Website</p>
+
+    </footer>
+
+</body>
+
+</html>
