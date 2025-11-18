@@ -12,12 +12,24 @@ const days = [
   "Saturday",
 ];
 
+//Getting time and date
 const day = days[dateNow.getDay()];
-const time = dateNow.getTime();
-const msgDay = "Today is: ";
-const msgTime = "Current Time: ";
+const time = dateNow.toLocaleTimeString("en-US");
 
-console.log(day);
-console.log(time);
-document.querySelector("#day").textContent = msgDay + day;
-document.querySelector("#time").textContent = msgTime + time;
+let hour = dateNow.getHours();
+let minute = dateNow.getMinutes();
+let second = dateNow.getSeconds();
+
+let ampm = hour >= 12 ? "PM" : "AM";
+hour = hour % 12;
+hour = hour ? hour : 12;
+const timeReOrderd = `${hour} ${ampm} : ${minute} : ${second}`;
+
+const msgDay = "Today is: " + day;
+const msgTime = "Current time: " + timeReOrderd;
+
+document.querySelector("#day").textContent = msgDay;
+document.querySelector("#time").textContent = msgTime;
+
+//I found this function to late :)
+// console.log(dateNow.toDateString());
