@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic - JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="content">
+
+
+
+            <div class="div-exercise2">
+                <p class="parText">This is a paragraf</p>
+                <div><button class="submit">Click here for magic!</button></div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+<script>
+    const parText = document.querySelector('.parText');
+    const changeBtn = document.querySelector('.submit');
+
+    let isChanged = false;
+
+    changeBtn.addEventListener('click', () => {
+        if (!isChanged) {
+            //change text and style
+            parText.textContent = "✨ The magic worked! ✨";
+            parText.style.fontSize = "24px";
+            parText.style.fontFamily = "Arial";
+            isChanged = true;
+        } else {
+            //reset
+            parText.textContent = "This is a paragraf";
+            parText.style = "";
+            isChanged = false;
+        }
+
+
+    });
+
+
+</script>
+
+</html>
