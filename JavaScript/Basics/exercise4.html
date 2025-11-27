@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <input id="changeColor-btn" type="button" value="Click to set paragraph background color"
+            onclick="changeBackground(document.querySelector('p'))">
+        <p>JavaScript Exercises</p>
+        <p>PHP Exercises</p>
+        <p>C# Exercises</p>
+    </body>
+    <script>
+        function changeBackground(element) {
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            element.style.backgroundColor = randomColor;
+        };
+
+
+
+
+    </script>
+</body>
+
+</html>
