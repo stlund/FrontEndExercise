@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 10 - Count drop downlist.</title>
+</head>
+
+<body>
+    <form>
+        Select your favorite Color :
+        <select id="mySelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>White</option>
+        </select>
+        <input type="button" onclick="getOptions(document.querySelector('#mySelect'))"
+            value="Count and Output all items">
+    </form>
+
+
+    <script>
+
+        function getOptions(element) {
+            let counter = 0;
+            let values = [];
+
+            for (let i = 0; i < element.length; i++) {
+                let option = element[i];
+                values.push(option.value); //Lägger till varje enskilt värde i [].
+            };
+            alert('Antal options: ' + element.length + '\nVärden: ' + values.join(', '));
+        };
+
+
+    </script>
+
+</body>
+
+</html>
